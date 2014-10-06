@@ -1,0 +1,384 @@
+@import url(reset.css);
+
+body{
+	font-size:100%;
+}
+
+.bg-top,
+.bg-middle,
+.bg-bottom{
+	width:100%;
+	min-width:960px;
+}
+.bg-top{
+	height:500px;
+	background:url(../img/bg-top.png) repeat-x;
+	padding-top:18px;
+}
+.bg-middle{
+	background:url(../img/bg-middle.png);
+}
+.bg-bottom{
+	height:18px;
+	background:url(../img/bg-top.png) repeat-x;
+}
+header,
+.slider, 
+.page{
+	width: 960px;
+	min-width:960px;
+	margin:0 auto;
+	overflow:hidden;
+	box-sizing: border-box;
+}
+a{
+	color:#c5414a;
+	text-decoration: none;
+}
+.link-block{
+	display:block;
+	height:100%;
+}
+h3{
+	color:#38441b;
+	font-size:1.27em;
+}
+h4{
+	color:#38441b;
+	font-size:1.25em;
+}
+p{
+	font:400 0.8125em Plumb sans-serif;
+}
+						/* Header */
+header{
+	height:500px;
+	padding-top:50px;
+	background:#e6edd5 url(../img/header-bg.png);
+	position:relative;
+	overflow:hidden;
+}
+nav{
+	text-align:center;
+}
+nav li{
+	display:inline-block;
+	margin-right:1.875%;
+}
+nav a{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.9375em;
+	text-transform:uppercase;
+}
+.header-icons{
+	text-align:right;
+	display:block;
+	position:absolute;
+	right:1%;
+	top:52px;
+
+}
+.header-icons li{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	padding:0 10px;
+	border-right:1px dotted #c5414a;
+	opacity:0.5;
+}
+.header-icons li:first-child{
+	background:url(../img/icons.png) 8px 0 no-repeat;
+}
+.header-icons li:first-child + li{
+	background:url(../img/icons.png) -41px 0 no-repeat;
+}
+.header-icons li:last-child{
+	background:url(../img/icons.png) -89px 0 no-repeat;
+	border:none;
+}
+.header-icons li:hover{
+	opacity:1;
+}
+.header-icons li a{
+	display:block;
+	height:100%;
+}
+
+header .logo{
+	width:225px;
+	height:167px;
+	background:url(../img/logo.png);
+	float:left;
+	margin-left:22px;
+}
+header .contacts{
+	float:right;
+	margin-top:30px;
+	line-height:1.2;
+	font-size:0.875em;
+	margin-right:22px;
+	text-align:right;
+	color:#38441b;
+}
+header .contacts span{
+	color:#c5414a;
+	font-weight:700;
+}
+
+header .contacts + p:before{
+	content:"";
+	display:table;
+	clear:both;
+} 
+header .contacts + p{
+	margin-right:22px;
+	font-size:0.75em;	
+}
+
+header .left-flowers{
+	width:311px;
+	height:300px;
+	position:absolute;
+	bottom:-30px;
+	left:-20px;
+	background:url(../img/left-flowers.png);
+}
+header .midle-sales{
+	width:46.45833%;
+	height:318px;
+	position:absolute;
+	bottom:0px;
+	left:27.5%;
+	background:url(../img/sales-bg.png);
+	overflow:visible;
+	padding:3% 1% 4% 4%;
+	box-sizing: border-box;
+}
+header .midle-sales img{
+	width:85%;
+	display:block;
+	margin:0 auto;
+}
+header .midle-sales:before{
+	width:87px;
+	height:87px;
+	left:40px;
+	top:-20px; 
+	padding:6% 0;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	position:absolute;
+	background:url(../img/red-label.png);
+	content:"лидер продаж";
+	color:#fff;
+	text-align:center;
+	transform:rotate(-15deg);
+}
+header .right-flowers{
+	width:286px;
+	height:300px;
+	position:absolute;
+	bottom:-30px;
+	right:-20px;
+	background:url(../img/right-flowers.png);
+}
+
+
+						/* slider */
+
+.slider{
+	height:218px;
+	position:relative;
+}
+.slider #control-left{
+	width:53px;
+	content:' ';
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	background:#edefe8 url(../img/left-switch.png) center no-repeat;
+	cursor:pointer;
+	opacity:0.5;
+}
+.slider #control-right{
+	width:53px;
+	content:' ';
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	background:#edefe8 url(../img/right-switch.png) center no-repeat;
+	cursor:pointer;
+	opacity:0.5;
+}
+.slider #control-right:hover, .slider #control-left:hover{
+	opacity:1;
+	transition:1s;
+}
+.slider .slider-wrapper{
+	width:88.95833%;
+	height:100%;
+	overflow:hidden;
+	margin:0 auto;
+}
+.slider ul{
+	width:500%;
+	height:100%;
+	padding-top:10px;
+	margin:0 auto;
+	background:#fcfcfc;
+	overflow:hidden;
+	box-sizing: border-box;
+	transition:2s; 
+}
+.slider ul li{
+	width:4.4479164%;
+	margin-left:0.4%;
+	text-align:center;
+	display:inline-block;
+	
+}
+.slider ul li a{
+	font-size:0.875em;
+}
+              /* .page */
+              /* aside */
+.page{
+	background:#fcfcfc;
+	padding-top:25px;
+}
+aside{
+	float:left;
+}
+aside{
+	width:30.95833%;
+}
+.page section:after{
+	display:block;
+	content:' ';
+	clear:both;
+}
+.news{
+	width:88.4926%;
+	margin:0 auto;
+}
+.news li{
+	margin:25px 0;
+}
+.news span{
+	display:block;
+	color:#38441b;
+	font-size:0.6875em;
+}
+.news a{
+	display:block;
+	text-align: justify;
+	font:400 0.875em/12px Plumb sans-serif;
+	text-decoration:underline;
+}
+.news a:hover{
+	text-decoration:none;
+}
+.news h4{
+	text-align: center;
+}
+.all-news{
+	margin-top:30px;
+	text-align:center;
+	position:relative
+}
+.all-news a{
+	display:inline;
+	text-decoration:none;
+	padding:7px 10px;
+	background:#f1f2ed;
+	box-shadow:0 6px 5px -5px rgba(0,0,0,0.7);
+}
+.all-news:after{
+	content:'';
+	background:url(../img/aside-flowers.png);
+	width:114px;
+	height:108px;
+	position:absolute;
+	left:87px;
+	top:55px;
+	
+}
+.page section,
+footer .right{
+	width:68.85416%;
+	overflow:hidden;
+}
+.page section .content{
+	width:95%;
+	margin:0 auto;
+	text-align:justify;
+}
+.page .content:after{
+	display:block;
+	content:' ';
+	clear:both;
+}
+.page section p{
+	margin-top:25px;
+}
+.page h3:before{
+	float:right;
+	width:205px;
+	height:163px;
+	background:url(../img/content-img.png);
+	content:'';
+	margin:0 0 0 0.625em;
+}
+.before-block-footer{
+	background:url(../img/back-footer-before.png);
+	height:98px;
+	width:960px;
+}
+footer{
+	background:#fcfcfc;
+	height:65px;
+	position:relative;
+}
+.footer-logo{
+	position:absolute;
+	width:81px;
+	height:59px;
+	left:12.28333%;
+	top:3px;
+	background:url(../img/footer-logo.png);
+}
+footer .right{
+	float:right;
+	height:100%;
+}
+footer nav{
+	float:left;
+	min-width:65%;
+	padding:5px 0 0 0;
+}
+footer li{
+	font:400 0.6875em Plumb sans-serif;
+}
+footer ul{
+	margin-top:20px;
+}
+.counters{
+	float:right;
+}
+.counters li{
+	display:inline-block;
+	margin-right:5px;
+} 
+.rambler-top-100{
+	width:98px;
+	height:31px;
+	background:url(../img/rambler-top-100.png) no-repeat;
+}
+.counters:after{
+	content:'';
+	display:table;
+	clear:both;
+}
+
