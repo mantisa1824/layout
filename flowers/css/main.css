@@ -3,7 +3,6 @@
 body{
 	font-size:100%;
 }
-
 .bg-top,
 .bg-middle,
 .bg-bottom{
@@ -50,7 +49,7 @@ h4{
 p{
 	font:400 0.8125em Plumb sans-serif;
 }
-						/* Header */
+				/* Header */
 header{
 	height:500px;
 	padding-top:50px;
@@ -250,14 +249,7 @@ header .right-flowers{
 }
 aside{
 	float:left;
-}
-aside{
 	width:30.95833%;
-}
-.page section:after{
-	display:block;
-	content:' ';
-	clear:both;
 }
 .news{
 	width:88.4926%;
@@ -303,8 +295,8 @@ aside{
 	position:absolute;
 	left:87px;
 	top:55px;
-	
 }
+				/*section*/
 .page section,
 footer .right{
 	width:68.85416%;
@@ -314,11 +306,6 @@ footer .right{
 	width:95%;
 	margin:0 auto;
 	text-align:justify;
-}
-.page .content:after{
-	display:block;
-	content:' ';
-	clear:both;
 }
 .page section p{
 	margin-top:25px;
@@ -336,6 +323,7 @@ footer .right{
 	height:98px;
 	width:960px;
 }
+				/* footer */
 footer{
 	background:#fcfcfc;
 	height:65px;
@@ -376,9 +364,10 @@ footer ul{
 	height:31px;
 	background:url(../img/rambler-top-100.png) no-repeat;
 }
+.page section:after,
+.page .content:after,
 .counters:after{
-	content:'';
-	display:table;
+	display:block;
+	content:' ';
 	clear:both;
 }
-
